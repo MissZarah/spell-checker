@@ -34,7 +34,6 @@ Dictionary::Dictionary()
 			{
 				vec.push_back(trigram);
 			}
-
 			words[word.length() - 1].push_back(Word(word, vec));
 		}
 	}
@@ -130,17 +129,17 @@ int Dictionary::distance(const string &w1, const string &w2) const
 
 void Dictionary::rank_suggestions(std::vector<std::string> &suggestions, const std::string &word) const
 {
-
 	vector<std::pair<int, string>> pairs;
+
 	for (const string &w : suggestions)
 	{
-
 		int dis = distance(word, w);
 		pairs.push_back(std::make_pair(dis, w));
 	}
 
 	std::sort(pairs.begin(), pairs.end());
 	suggestions.clear();
+
 	for (const auto &pair : pairs)
 	{
 		suggestions.push_back(pair.second);
@@ -149,10 +148,8 @@ void Dictionary::rank_suggestions(std::vector<std::string> &suggestions, const s
 
 void Dictionary::trim_suggestions(std::vector<std::string> &suggestions) const
 {
-
 	if (suggestions.size() > 5)
 	{
-
 		suggestions.resize(5);
 	}
 }
