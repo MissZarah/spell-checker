@@ -1,7 +1,6 @@
 # spell-checker
 
-A simple word processor that reads a word as input and checks is against a dictionary. If the word exists in the dictionary then it is spelled correctly. 
-If the word is not found in the dictionary, a list of suggested corrections are the words in the dictionary that are “similar” to the
+A simple word processor that reads a word as input and checks ts against a dictionary. If the word exists in the dictionary then it is spelled correctly. However, ff the word is not found in the dictionary, a list of suggested corrections which are the words in the dictionary that are “similar” to the
 misspelled word are presented to the user. 
 
 # How to run the program 
