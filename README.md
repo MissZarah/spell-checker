@@ -7,7 +7,7 @@ misspelled word are presented to the user.
 # How to run the program 
 Clone the repository and run the following commands: 
 ```
-To create a excecutable file write the following command:  
+To create an excecutable file write the following command:  
 $ make
 To run the program write: 
 $ ./spell
