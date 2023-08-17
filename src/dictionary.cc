@@ -14,7 +14,7 @@ using std::vector;
 Dictionary::Dictionary()
 {
 
-	std::ifstream infile("words.txt");
+	std::ifstream infile("../resources/words.txt");
 	string line;
 
 	while (std::getline(infile, line))

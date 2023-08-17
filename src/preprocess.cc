@@ -16,7 +16,7 @@ void writeTofile(string filename)
 {
 
   std::fstream infile(filename);
-  std::ofstream outfile("words.txt");
+  std::ofstream outfile("../resources/words.txt");
   string line;
 
   while (std::getline(infile, line))
@@ -64,5 +64,5 @@ std::vector<string> create_trigram(string word)
 
 int main()
 {
-  writeTofile("dictionary.txt");
+  writeTofile("../resources/dictionary.txt");
 }
